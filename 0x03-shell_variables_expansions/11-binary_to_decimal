@@ -1,4 +1,12 @@
 #!/bin/bash
-echo $((2#BINARY)o)
+
+# Get the value of the BINARY environment variable
+binary_number=$BINARY
+
+# Convert the binary number to base 10 using the arithmetic expansion
+decimal_number=$((2#$binary_number))
+
+# Display the number in base 10 followed by a new line
+echo $decimal_number
 
 
